@@ -71,7 +71,7 @@
                        <a href="https://github.com/SensorThings-Dashboard/SensorThings-Dashboard">About this project</a>
                    </li>
                    <li>
-                       <a href="https://youtu.be/jFDp2NEeW4E">YouTube</a>
+                       <a href="https://youtu.be/jFDp2NEeW4E">YouTube Demo</a>
                    </li>
                </ul>
            </div>
@@ -83,28 +83,29 @@
    <!-- Full Width Image Header with Logo -->
    <div class="container-fluid">
        <div class="row">
-           <img src="res/IoT-WebDashboard-Banner.jpg" alt="Header Image" style="display:block;width:50%;margin-top:50px;margin-left: auto;margin-right: auto;"></img>
+           <img src="res/IoT-WebDashboard-Banner.jpg" alt="Header Image" style="display:block;width:50%;margin-top:60px; margin-bottom:20px; margin-left: auto;margin-right: auto;"></img>
        </div>
    </div>
 
-   <div class="container">
-       <div class="row">
-            <p style="text-align:center;">
-                Authors: Simon Böhm, Moritz Grauer, Daniel Liebler, Robin Maisch, Till Stöckmann, Frederic Tausch
-            </p>
-       </div>
-   </div>
 
    <!-- Content Section -->
    <section>
        <!-- We will plot the dashboard into this div -->
-       <div id="iot-db">
+       <div id="iot-db" style="margin-right: auto; margin-left: auto; width: 1000px; height: 800px;">
            <h3 id="headliner">IoT-WebDashboard</h3>
            <p>
                loading...
            </p>
        </div>
    </section>
+
+   <div class="container">
+       <div class="row">
+            <p style="text-align:center; margin-top: 20px; margin-bottom: 20px; font-weight: bold;">
+                Authors: Simon Böhm, Moritz Grauer, Daniel Liebler, Robin Maisch, Till Stöckmann, Frederic Tausch
+            </p>
+       </div>
+   </div>
 
    <script>
         iotDB = window.iotDB;
@@ -120,7 +121,6 @@
             iotDB.importUserConfig(userConfig);
         };
         iotDB.create({
-            "id": "iot-db",
             "disableImportExportCMS": false,
             "disableDownloadUpload": false,
             "disableConfiguration": false,
